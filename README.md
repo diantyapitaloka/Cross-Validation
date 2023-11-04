@@ -1,6 +1,6 @@
 # Sklearn-Crossvalidation
 
-using cross_validation_score in the decision_tree classifier. The dataset used is the iris dataset.
+Using cross_validation_score in the decision_tree classifier. The dataset used is the iris dataset.
 
 - import sklearn
 - from sklearn import datasets
