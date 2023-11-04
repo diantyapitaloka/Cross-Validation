@@ -6,13 +6,11 @@ using cross_validation_score in the decision_tree classifier. The dataset used i
 - from sklearn import datasets
  
 ## Load Iris Dataset
-- The dataset we will use is the iris dataset.
-- Then we divide the attributes and labels in the dataset.
+The dataset we will use is the iris dataset. Then we divide the attributes and labels in the dataset.
 - iris = datasets.load_iris()
 
 ## Divided Atribut and Target, Assign into Variable x, y
-- We will create our first machine learning model, such as a decision tree, using the Scikit Learn library.
-- Machine learning models are also often referred to as classifiers. Furthermore, the variable clf stands for classifier.
+We will create our first machine learning model, such as a decision tree, using the Scikit Learn library. Machine learning models are also often referred to as classifiers. Furthermore, the variable clf stands for classifier.
 
 - x=iris.data
 - y=iris.target
