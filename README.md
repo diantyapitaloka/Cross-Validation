@@ -1,6 +1,6 @@
 ## 🧊🍷🍵 Cross Validation 🍵🍷🧊
 
-Using cross_validation_score in the decision_tree classifier. The dataset used is the iris dataset.
+We using cross_validation_score in the decision_tree classifier. The dataset used is the iris dataset.
 
 ```
 import sklearn
