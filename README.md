@@ -8,7 +8,7 @@ from sklearn import datasets
 ```
  
 ## 🧊🍷🍵 Load Iris Dataset 🍵🍷🧊
-The dataset we will use the iris dataset. Then we divide the attributes and labels on the dataset.
+The dataset we will use the iris dataset. Then we divide the attributes and labels on the many dataset.
 ```
 iris = datasets.load_iris()
 ```
