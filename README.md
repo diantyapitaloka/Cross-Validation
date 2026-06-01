@@ -14,7 +14,7 @@ iris = datasets.load_iris()
 ```
 
 ## 🧊🍷🍵 Divided Atribut and Target, Assign into Variable X, Y 🍵🍷🧊
-We will create our first machine learning model, such as a decision tree, using the Scikit Learn library. Machine learning models are also often referred to as classifiers. Furthermore, the variable clf stands for classifier.
+We will create our first machine learning model, such as decision tree, using the Scikit Learn library. Machine learning models are also often referred to as classifiers. Furthermore, the variable clf stands for classifier.
 
 ```
 x=iris.data
