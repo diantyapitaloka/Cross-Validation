@@ -27,7 +27,7 @@ clf = tree.DecisionTreeClassifier()
 ```
 
 ## 🧊🍷🍵 Evaluation Model Perform with Cross Validation Score 🍵🍷🧊
-Once the dataset and model are ready, we can use cross validation to evaluate the performance of the machine learning model. The cross_val_score() function as below accepts 4 parameters, namely, 'clf' which is the machine learning model, 'X' which is the attribute of the dataset, 'y' which is the label of the dataset, and 'cv' which is the number of folds that will be used in cross validation.
+Once the dataset and model are ready, we can use cross validation to evaluate the performance of the machine learning model. The cross_val_score() function as below accepts like 4 parameters, namely, 'clf' which is the machine learning model, 'X' which is the attribute of the dataset, 'y' which is the label of the dataset, and 'cv' which is the number of folds that will be used in cross validation.
 
 ```
 scores = cross_val_score(clf, x, y, cv=5)
