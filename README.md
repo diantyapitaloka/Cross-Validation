@@ -6,6 +6,7 @@
 - Multiple Output Scores: The cross-validation function returns a list of individual performance scores corresponding to each fold, rather than a single unified score.
 - Statistical Summary: Averaging the scores gives the model's overall expected performance, while calculating the standard deviation reveals how stable or consistent the predictions are across different data samples.
 - Data Shuffling and Randomization: Passing a customized splitter object allows you to shuffle the dataset before splitting, which prevents biased evaluations if the original data is sorted by label.
+- Preservation of the Original Model: Cross-validation fits temporary internal copies of the classifier, meaning the original model instance remains unrained and unchanged after the evaluation process.
 
 ```
 import sklearn
