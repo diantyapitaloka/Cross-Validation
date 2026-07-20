@@ -1,5 +1,6 @@
 ## 🧊🍷🍵 Cross Validation 🍵🍷🧊
 - We are using cross_validation_score in the decision_tree classifier. All the dataset used are the iris dataset below.
+- Default Evaluation Metric: By default, the cross-validation score for a decision tree classification model calculates the overall accuracy of predictions on each test fold.
 
 ```
 import sklearn
