@@ -9,6 +9,7 @@
 - Preservation of the Original Model: Cross-validation fits temporary internal copies of the classifier, meaning the original model instance remains unrained and unchanged after the evaluation process.
 - Overfitting Detection: Comparing cross-validation results against the training data performance helps identify overfitting, which frequently occurs with fully grown, unrestricted decision trees.
 - Multi-Metric and Timing Analysis: Upgrading to advanced cross-validation functions allows you to evaluate multiple metrics simultaneously while also tracking the time required for training and testing on each fold.
+- Out-of-Sample Estimation: By testing exclusively on folds that were held out during each training iteration, cross-validation accurately simulates how well the Decision Tree will perform on unseen real-world data.
 
 ```
 import sklearn
