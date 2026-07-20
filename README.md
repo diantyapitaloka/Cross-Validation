@@ -2,6 +2,7 @@
 - We are using cross_validation_score in the decision_tree classifier. All the dataset used are the iris dataset below.
 - Default Evaluation Metric: By default, the cross-validation score for a decision tree classification model calculates the overall accuracy of predictions on each test fold.
 - Custom Performance Metrics: You can evaluate the model using alternative metrics—such as precision, recall, or F1-score—by specifying a custom scoring parameter.
+- Automatic Class Balancing: For classification tasks, Scikit-Learn automatically applies Stratified K-Fold splitting, ensuring each fold contains a proportional representation of every target class.
 
 ```
 import sklearn
