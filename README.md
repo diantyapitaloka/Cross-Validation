@@ -13,6 +13,7 @@
 - Preprocessing Integration to Prevent Data Leakage: Feature engineering steps (such as missing value imputation or scaling) must be calculated exclusively on each training fold during cross-validation, preventing information from validation folds from corrupting the evaluation.
 - Choice of $K$ and Bias-Variance Dynamics: Selecting the number of folds ($K$) creates a fundamental trade-off: lower fold counts (e.g., 2 folds) tend to underestimate performance due to smaller training subsets, whereas extreme fold counts (like leave-one-out) reduce performance bias but increase evaluation variance across iterations.
 - Hyperparameter Optimization Alignment: Cross-validation serves as the evaluation engine for systematic parameter searches, allowing you to tune decision tree constraints (such as maximum tree depth or minimum leaf sizes) without overfitting to a static validation set.
+- Group-Aware Splitting for Clustered Data: Standard cross-validation assumes each sample is independent; when datasets contain multiple repeated observations from the same subject or entity, group-aware splitting guarantees all records from a single entity remain strictly within either training or test folds.
 
 ```
 import sklearn
