@@ -15,6 +15,7 @@
 - Hyperparameter Optimization Alignment: Cross-validation serves as the evaluation engine for systematic parameter searches, allowing you to tune decision tree constraints (such as maximum tree depth or minimum leaf sizes) without overfitting to a static validation set.
 - Group-Aware Splitting for Clustered Data: Standard cross-validation assumes each sample is independent; when datasets contain multiple repeated observations from the same subject or entity, group-aware splitting guarantees all records from a single entity remain strictly within either training or test folds.
 - Sequential and Temporal Splitting: For time-dependent or sequential datasets, standard randomized K-fold violates chronological ordering; time-based cross-validation restricts model training strictly to historical data points to evaluate predictions on subsequent future folds.
+- Nested Loops for Unbiased Risk Assessment: Running an outer evaluation loop alongside an inner tuning loop isolates hyperparameter selection from final accuracy measurement, preventing overly optimistic performance scores caused by tuning on the evaluation split itself.
 
 ```
 import sklearn
