@@ -16,6 +16,7 @@
 - Group-Aware Splitting for Clustered Data: Standard cross-validation assumes each sample is independent; when datasets contain multiple repeated observations from the same subject or entity, group-aware splitting guarantees all records from a single entity remain strictly within either training or test folds.
 - Sequential and Temporal Splitting: For time-dependent or sequential datasets, standard randomized K-fold violates chronological ordering; time-based cross-validation restricts model training strictly to historical data points to evaluate predictions on subsequent future folds.
 - Nested Loops for Unbiased Risk Assessment: Running an outer evaluation loop alongside an inner tuning loop isolates hyperparameter selection from final accuracy measurement, preventing overly optimistic performance scores caused by tuning on the evaluation split itself.
+- Linear Scaling of Computational Overhead: Cross-validation multiplies computational runtime directly by the number of folds, as the decision tree algorithm must re-execute its full split-finding procedure from scratch for every fold iteration.
 
 ```
 import sklearn
