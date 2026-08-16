@@ -21,6 +21,7 @@
 - Nested Cross-Validation: Uses an inner loop for hyperparameter tuning and an outer loop for unbiased performance estimation, preventing optimistic bias that occurs when tuning and evaluating on the same validation splits.
 - Repeated K-Fold Cross-Validation: Executes standard K-Fold splitting multiple times with different random seeds, providing a broader statistical sample that reduces estimation variance on smaller datasets.
 - Monte Carlo (Shuffle-Split) Cross-Validation: Randomly partitions data into training and test sets for a fixed number of iterations, decoupling the number of evaluation splits from the training-to-testing dataset ratio.
+- Decision Tree Instability Diagnosis: High variance in performance scores across different folds directly signals that the decision tree structure is overly sensitive to small variations in the training data.
 
 ```
 import sklearn
