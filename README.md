@@ -18,6 +18,7 @@
 - Nested Loops for Unbiased Risk Assessment: Running an outer evaluation loop alongside an inner tuning loop isolates hyperparameter selection from final accuracy measurement, preventing overly optimistic performance scores caused by tuning on the evaluation split itself.
 - Linear Scaling of Computational Overhead: Cross-validation multiplies computational runtime directly by the number of folds, as the decision tree algorithm must re-execute its full split-finding procedure from scratch for every fold iteration.
 - Probability Calibration and Soft Metrics: Beyond evaluating discrete class predictions, cross-validation can assess probabilistic tree outputs using soft-prediction metrics (such as logarithmic loss or area under the ROC curve) to evaluate how well predicted confidence matches actual outcome frequencies.
+- Nested Cross-Validation: Uses an inner loop for hyperparameter tuning and an outer loop for unbiased performance estimation, preventing optimistic bias that occurs when tuning and evaluating on the same validation splits.
 
 ```
 import sklearn
