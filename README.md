@@ -20,6 +20,7 @@
 - Probability Calibration and Soft Metrics: Beyond evaluating discrete class predictions, cross-validation can assess probabilistic tree outputs using soft-prediction metrics (such as logarithmic loss or area under the ROC curve) to evaluate how well predicted confidence matches actual outcome frequencies.
 - Nested Cross-Validation: Uses an inner loop for hyperparameter tuning and an outer loop for unbiased performance estimation, preventing optimistic bias that occurs when tuning and evaluating on the same validation splits.
 - Repeated K-Fold Cross-Validation: Executes standard K-Fold splitting multiple times with different random seeds, providing a broader statistical sample that reduces estimation variance on smaller datasets.
+- Monte Carlo (Shuffle-Split) Cross-Validation: Randomly partitions data into training and test sets for a fixed number of iterations, decoupling the number of evaluation splits from the training-to-testing dataset ratio.
 
 ```
 import sklearn
