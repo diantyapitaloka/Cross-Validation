@@ -5,7 +5,7 @@
 - Automatic Class Balancing: For classification tasks, Scikit-Learn automatically applies Stratified K-Fold splitting, ensuring each fold contains a proportional representation of every target class.
 - Multiple Output Scores: The cross-validation function returns a list of individual performance scores corresponding to each fold, rather than a single unified score.
 - Statistical Summary: Averaging the scores gives the model's overall expected performance, while calculating the standard deviation reveals how stable or consistent the predictions are across different data samples.
-- Data Shuffling and Randomization: Passing a customized splitter object allows you to shuffle the dataset before splitting, which prevents biased evaluations if the original data is sorted by label.
+- Data Shuffling and Randomization: Passing a customized splitter object allows you to shuffle the dataset before splitting, which is prevents biased evaluations if the original data is sorted by label.
 - Preservation of the Original Model: Cross-validation fits temporary internal copies of the classifier, meaning the original model instance remains unrained and unchanged after the evaluation process.
 - Overfitting Detection: Comparing cross-validation results against the training data performance helps identify overfitting, which frequently occurs with fully grown, unrestricted decision trees.
 - Multi-Metric and Timing Analysis: Upgrading to advanced cross-validation functions allows you to evaluate multiple metrics simultaneously while also tracking the time required for training and testing on each fold.
