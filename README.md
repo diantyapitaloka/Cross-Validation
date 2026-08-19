@@ -23,7 +23,7 @@
 - Monte Carlo (Shuffle-Split) Cross-Validation: Randomly partitions data into training and test sets for a fixed number of iterations, decoupling the number of evaluation splits from the training-to-testing dataset ratio.
 - Decision Tree Instability Diagnosis: High variance in performance scores across different folds directly signals that the decision tree structure is overly sensitive to small variations in the training data.In-Fold Resampling for Imbalanced Datasets: Class rebalancing techniques (such as synthetic oversampling) must be applied strictly within each fold's training subset to prevent artificial patterns from contaminating the validation set.
 - Parallel Execution Efficiency: Because each fold operates independently without dependencies on other iterations, cross-validation workloads are embarrassingly parallel and scale efficiently across multi-core CPUs.
-- Purged and Embargoed Splitting: In datasets with overlapping temporal events, enforcing clear time buffers before and after validation splits prevents information leakage between closely adjacent data points.
+- Purged and Embargoed Splitting: In datasets with overlapping temporal events, enforcing clear time buffers before and also after validation splits prevents information leakage between closely adjacent data points.
 - Leave-One-Out Cross-Validation (LOOCV): An extreme variation where $K$ equals the total sample size ($N$), maximizing the training data available per fold while trading off significantly higher computational cost and score variance.
 
 ```
