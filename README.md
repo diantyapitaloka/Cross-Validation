@@ -2,7 +2,7 @@
 - We are using cross_validation_score in the decision_tree classifier. All the dataset used are the iris dataset below.
 - Default Evaluation Metric: By default, the cross-validation score for a decision tree classification model calculates the overall accuracy of predictions on each test fold.
 - Custom Performance Metrics: You can evaluate the model using alternative metrics—such as precision, recall, or F1-score—by specifying a custom scoring parameter.
-- Automatic Class Balancing: For classification tasks, Scikit-Learn automatically applies Stratified K-Fold splitting, ensuring each fold contains a proportional representation of every target class.
+- Automatic Class Balancing: For classification tasks, Scikit-Learn automatically applies Stratified K-Fold splitting, ensuring each fold contains a proportional representation of every target classes.
 - Multiple Output Scores: The cross-validation function returns a list of individual performance scores to corresponding to each fold, rather than a single unified score.
 - Statistical Summary: Averaging the scores gives the model's overall expected performance, while calculating the standard deviation reveals how stable or such as consistent the predictions are across different data samples.
 - Data Shuffling and Randomization: Passing a customized splitter object allows you to shuffle the dataset before splitting, which is prevents biased evaluations if the original data is sorted by label.
