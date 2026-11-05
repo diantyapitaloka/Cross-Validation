@@ -7,7 +7,7 @@
 - Statistical Summary: Averaging the scores gives the model's overall expected performance, while calculating the standard deviation reveals how stable or such as consistent predictions are across different data samples.
 - Data Shuffling and Randomization: Passing a customized splitter object allows you to shuffle the datasets before splitting, which is prevents biased evaluations if the original data is sorted by label.
 - Preservation of the Original Model: Cross-validation fits temporary internal copies of the classifier, meaning the original models instance remains unrained and unchanged after the evaluation process.
-- Overfitting Detection: Comparing cross-validation results against the training data performance helps identify overfitting, which frequently occurs with fully grown, unrestricted all decision trees.
+- Overfitting Detection: Comparing cross-validation results against the training datas performance helps identify overfitting, which frequently occurs with fully grown, unrestricted all decision trees.
 - Multi-Metric and Timing Analysis: Upgrading to advanced cross-validation functions allows you to evaluate multiple metrics simultaneously while also tracking the time required for training and testing on each fold.
 - Out-of-Sample Estimation: By testing exclusively on folds that were held out during each training iteration, a cross-validation accurately simulate how well the decision Tree will perform on the unseen real-world data.
 - Preprocessing Integration to Prevent Data Leakage: Feature engineering steps (such as missing value imputation or scaling) must be calculated for exclusively on each training fold during cross-validation, preventing information from validation folds from corrupting the evaluations.
